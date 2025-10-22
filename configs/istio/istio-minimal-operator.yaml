@@ -10,12 +10,12 @@ spec:
       # See: https://istio.io/docs/ops/best-practices/security/#configure-third-party-service-account-tokens
       jwtPolicy: third-party-jwt
 
+  meshConfig:
+    enablePrometheusMerge: false
 
   components:
     pilot:
       enabled: true
-    prometheus:
-      enabled: false
     ingressGateways:
       - name: istio-ingressgateway
         enabled: true
